@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+:root{ /*criando variaveis:*/
+    --cor1: #F25757;    /*cor paleta*/
+    --cor2: #486CD9;    /*cor paleta*/
+    --cor3: #5979D9;    /*cor paleta*/
+    --cor4: #8499D9;    /*cor paleta*/
+    --cor5: #49bf9d;    /*cor paleta*/
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left, #486cd9da, #5979d9e7, #8499d9);
+    
+}
+#boxForm{
+    z-index: 2;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.630);
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 350px;
+    
+}
+fieldset{
+    border: 3px solid var(--cor3);
+    padding: 20px;
+    
+}
+legend{
+    border: 1px solid var(--cor3);
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--cor3);
+}
+.inputLabel{
+    position: relative;
+
+}
+.inputUser{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    color:white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.animationLabel{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .animationLabel, 
+.inputUser:valid ~ .animationLabel{
+    top: -22px;
+    font-size: 15px;
+    color: var(--cor4);
+    font-weight: bold;
+}
+#data-nascimento{
+    border: none;
+    padding: 9px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+#data-nascimento:focus{
+    border: 1px solid var(--cor2);
+}
+#submit{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-image: linear-gradient(to left, #486cd9, #5979d9, #8499d9);
+}
+#submit:hover{
+    background-image: linear-gradient(to left, #3960d6, #476ddf, #738ddd);
+}
+footer{
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 0;
+    background-image: linear-gradient(to left, #3960d6, #476ddf, #738ddd);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    
+}
+a:hover{
+    color: var(--cor5) ;
+    background-color: rgba(0, 0, 0, 0.800);
+    border-radius: 5px;
+}
+i{
+    font-size: 1.3em;
+}
